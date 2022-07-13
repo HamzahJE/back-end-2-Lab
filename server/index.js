@@ -17,15 +17,15 @@ app.use(cors())
 // getAllHouses 
 app.get('/api/houses',getHouses)
 
-// deleteHousegit in
-app.delete('/api/houses',deleteHouse)
+// deleteHouse
+app.delete('/api/houses/:id',deleteHouse)
 
 
 // createHouse
 app.post('/api/houses',createHouse)
 
 // updateHouse
-app.put('/api/houses',updateHouse)
+app.put('/api/houses/:id',updateHouse)
 
 
 

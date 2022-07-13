@@ -11,6 +11,8 @@ const createHouse = body => axios.post(baseURL, body).then(housesCallback).catch
 const deleteHouse = id => axios.delete(`${baseURL}/${id}`).then(housesCallback).catch(errCallback)
 const updateHouse = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(housesCallback).catch(errCallback)
 
+
+
 function submitHandler(e) {
     e.preventDefault()
 
@@ -59,3 +61,4 @@ function displayHouses(arr) {
 form.addEventListener('submit', submitHandler)
 
 getAllHouses()
+
